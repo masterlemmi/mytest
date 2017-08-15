@@ -1,0 +1,8 @@
+JPA
+DRM
+webservices 
+MSSQL:
+HIbernate @manytoone, cascades.. fetch..
+SDLC 
+Databaase Normalization
+
