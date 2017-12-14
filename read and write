@@ -1,0 +1,16 @@
+@Test
+	public void writebytesToText() throws IOException {
+		byte[] bFile = Files.readAllBytes(new File("filetoread").toPath());
+		File fileToWriteTo = new File(OUTPUT_FILE_NAME);
+		FileUtils.writeByteArrayToFile(fileToWriteTo, bFile);
+		System.out.println(fileToWriteTo.getAbsolutePath());
+	}
+
+	@Test
+	public void createXLFile() throws IOException {
+		File file = new File("filetowrite");
+		byte[] barr = FileUtils.readFileToByteArray(file);
+		
+		Path path = Paths.get("D:/das2.xls");
+		Files.write(path, barr);
+	}
